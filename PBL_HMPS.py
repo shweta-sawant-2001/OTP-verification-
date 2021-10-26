@@ -14,9 +14,9 @@ otp_number=random.randint(100000,999999)
 
 #Authentification of Twilio 
 
-auth_sid="AC5581ab2a1285607920b71fb064246c13" 
+auth_sid="AC5581ab*************6c13" 
 
-auth_token="44fe383cfdbce7cea156cda96f7249e2" 
+auth_token="44fe383c************156cd***8*9e2" 
 
 otp_client=Client(auth_sid,auth_token) 
 
@@ -26,9 +26,9 @@ otp_message = otp_client.messages.create(
 
      body="Your OTP number is "+str(otp_number),
  
-     from_="+15597850327", 
+     from_="+15********", 
 
-     to="+919373243606",
+     to="+91*******",
      )
 
 print('OTP number is '+str(otp_number))
